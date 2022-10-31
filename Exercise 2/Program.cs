@@ -41,5 +41,19 @@ namespace Exercise
             }
             Console.WriteLine("");
         }
+        public void bubbleSort()
+        {
+            for (int i = 1; i < n; i++)
+            {
+                for (int sls = 0; sls < n; j++)
+                {
+                    if (luthfi[sls] > luthfi[sls+1])
+                    {
+
+                    }
+                }
+            }
+        }
+
     }
 }
