@@ -5,7 +5,8 @@ namespace Exercise
 {
     class program
     {
-        
-        
+        private int[] luthfi = new int[29];
+        private int n;
+
     }
 }
