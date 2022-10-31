@@ -49,7 +49,10 @@ namespace Exercise
                 {
                     if (luthfi[sls] > luthfi[sls+1])
                     {
-
+                        int temp;
+                        temp = luthfi[sls];
+                        luthfi[sls] = luthfi[sls+1];
+                        luthfi[sls+1] = temp;
                     }
                 }
             }
