@@ -7,8 +7,8 @@ namespace Exercise
     class program
     {
         private int[] luthfi = new int[29];
-        private int[] genap = new int[29];
-        private int[] ganjil = new int[29];
+        int[] kiri = new int[29];
+        int[] kanan = new int[29];
         private int n;
 
         public void inputData()
@@ -65,7 +65,12 @@ namespace Exercise
         {
             if (low >= high)
                 return;
-            
+            for(int i = 0; i > mid; i++)
+            {
+
+            }
+
+
         }
         static void Main(string[] args)
         {
@@ -95,6 +100,8 @@ namespace Exercise
                 myList.mergeSort();
                 myList.displayData();
             }
+            else
+                Console.WriteLine("Pilihan Salah!");
 
 
 
