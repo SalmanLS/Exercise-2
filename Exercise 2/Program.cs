@@ -21,7 +21,12 @@ namespace Exercise
                     break;
                 else
                     Console.WriteLine("\n Maksimal elemen pada array adalah 29 \n");
-
+                for (int i = 0; i < n; i++)
+                {
+                    Console.Write($"Masukkan elemen array ke-{i+1} :");
+                    string s2 = Console.ReadLine();
+                    luthfi[i] = int.Parse(s2);
+                }
             }
         }
     }
