@@ -29,5 +29,17 @@ namespace Exercise
                 }
             }
         }
+        public void displayData()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("=================================");
+            Console.WriteLine("Elemen array yang telah tersusun:");
+            Console.WriteLine("=================================");
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine($"{i}. {luthfi[i]}");
+            }
+            Console.WriteLine("");
+        }
     }
 }
