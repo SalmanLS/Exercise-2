@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Exercise
@@ -6,6 +7,8 @@ namespace Exercise
     class program
     {
         private int[] luthfi = new int[29];
+        private int[] genap = new int[29];
+        private int[] ganjil = new int[29];
         private int n;
 
         public void inputData()
@@ -58,5 +61,43 @@ namespace Exercise
             }
         }
 
+        public void mergeSort(int low, int high, int mid)
+        {
+            if (low >= high)
+                return;
+            
+        }
+        static void Main(string[] args)
+        {
+            program myList = new program();
+            int p;
+            Console.WriteLine("");
+            Console.WriteLine("Selamat Datang");
+            Console.WriteLine("==============");
+            Console.WriteLine("");
+            Console.WriteLine("Pilih metode dibawah ini!");
+            Console.WriteLine("1. Bubble Sort");
+            Console.WriteLine("2. Merge Sort");
+            Console.WriteLine("Pilih(1/2)");
+            string l = Console.ReadLine();
+            p = Int32.Parse(l);
+            if (p == 1)
+            {
+                Console.Clear();
+                myList.inputData();
+                myList.bubbleSort();
+                myList.displayData();
+            }
+            else if (p == 2)
+            {
+                Console.Clear();
+                myList.inputData();
+                myList.mergeSort();
+                myList.displayData();
+            }
+
+
+
+        }
     }
 }
